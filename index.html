@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS-->
+
+    <link rel="stylesheet" href="./ccs/style.css">
+
+    <!--FONT-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>Home - RITUAL</title>
+</head>
+
+<body>
+    <div class="grid-container">
+       <!-- VAMOS A CREAR LA ESTRUCTURA BASICA DE HTML -->
+        <header class="encabezado grid__setter">
+            <!-- menu de navegacion, logo, titulo, redes, carrusel-->
+            <nav class="navegador-principal">
+                <h1>Ritual - Intimo & Deportivo</h1> 
+                <ul>
+                    <li><a href="./index.html">inicio</a></li>
+                    <li><a href="./html/shop.html">shop</a></li>
+                    <li><a href="./html/contacto.html">contacto</a></li>
+                    <li><a href="./html/sobre-nosotros.html">sobre nosotros</a></li>
+
+                    <form class="buttons-nav" action="/sumbit" method="post">
+                        <label for="buscar"></label>
+                        <input type="search" name="buscar" id="buscar" placeholder="buscar">
+                        
+                        <button class="buttons-nav">cuenta</button>
+            
+                        <button class="buttons-nav">carrito</button>
+                    </form>
+                </ul>
+            </nav>
+        </header>
+        
+        <main class="contenido grid__setter">
+            <!-- contenido principal-->
+            <div class="principal">
+                <h2>RITUAL - Intimo y Deportivo</h2>
+                <h3 class="titulos-main">CATEGORIAS</h3>
+                <section class="categorias">
+                    <div class="cada-categoria">
+                        <img src="./assets/ropa-interior-mujer.jpg" alt="ropa interior de mujer">
+                        <a href="./html/shop.html">Mujer</a>
+                    </div>
+
+                    <div class="cada-categoria">
+                        <img src="./assets/ropa-interior-hombre.jpg" alt="ropa interior de hombre">
+                        <a href="./html/shop.html">Hombre</a>
+                    </div>
+
+                    <div class="cada-categoria">
+                        <img src="./assets/ropa-niños.jpg" alt="ropa interior de niños/as">
+                        <a href="./html/shop.html">niños/as</a>
+                    </div>
+                </section>
+
+                <section class="datos-importantes">
+                    <div>
+                        <h4>CUOTAS SIN INTERES</h4>
+                        <p>con todas las tarjetas</p>
+                    </div>
+
+                    <div>  
+                        <h4>ENVIOS</h4>
+                        <p>a todo el pais</p>
+                    </div>
+
+                    <div>
+                        <h4>COMPRA SEGURA</h4>
+                        <p>protegemos tus datos</p>
+                    </div>
+
+                </section>
+            </div>
+        </main>
+
+        <aside class="extra grid__setter">
+            <video class="video" src="./assets/video-deporte.mp4" controls></video>
+            <p id="coleccion-2025">coleccion 2025</p>
+        </aside>
+
+        <footer class="footer grid__setter">
+            <!-- redes sociales, menu de navegacion, contactos, etc -->
+            <div class="datos-footer">
+                <h5 class="titulos-footer">CONTACTOS</h5>
+                <ul>
+                    <li><a href="">whatsapp</a></li>
+                    <li><a href="https://www.instagram.com/ritual_iyd/">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/share/18HNoAb3LK/?mibextid=wwXIfr">Facebook</a></li>
+                </ul>            
+            </div>
+
+            <div class="datos-footer">
+                <h5>MENU</h5>
+                <ul>
+                    <li><a href="./index.html">inicio</a></li>
+                    <li><a href="./html/shop.html">shop</a></li>
+                    <li><a href="./html/sobre-nosotros.html">sobre nosotros</a></li>
+                </ul>
+            </div>
+            
+            <div class="datos-footer">
+                <h5>NOVEDADES</h5>
+                <p>enterate de las novedades primero que nadie!</p>
+
+                <form action="/submit" method="post">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                    <input type="button" value="Enviar">
+                </form>
+            </div>
+
+            <div class="datos-footer">
+                <img class="logo-footer" src="./assets/logo_principal.jpeg" alt="logo principal">
+            </div>
+
+        </footer>
+    </div>    
+</body>
+</html>

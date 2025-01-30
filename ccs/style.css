@@ -1,0 +1,189 @@
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sour Gummy", serif;
+}
+
+/* GRID CONTAINER*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.3fr 2fr 3fr 0.3fr;
+    grid-template-areas:
+            "encabezado encabezado encabezado"
+            "extra      extra      extra"
+            "contenido  contenido  contenido"
+            "footer     footer     footer"
+    ;
+}
+
+/*HEADER*/
+
+.encabezado { 
+    grid-area: encabezado;
+}
+.navegador-principal {
+    display: flex; 
+    justify-content: space-around;
+    background-color: #88498F;
+    border: 5px solid #4f0147;
+    text-transform: capitalize;
+    color: #ffe4c4;
+    text-shadow: 5px 5px 6px black;
+    height: 71px;
+    align-items: center;
+    width: 100%;
+}
+.encabezado nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.encabezado nav ul li a {
+    color: #ffe4c4;
+    text-decoration: none;
+    padding: 0px 35px;
+}
+.buttons-nav {
+    color: #ffe4c4;
+}
+.buttons-nav button {
+    background-color: #808080;
+}
+
+/*MAIN*/
+
+.contenido {
+    grid-area: contenido;
+}
+.principal {
+    background-color: #88498F;
+}
+
+.principal h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #808080;
+    text-shadow: 1px 2px 3px black;
+    font-size: 40px;
+}
+#coleccion-2025 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.txt {
+    color: #FFFFFA;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.titulos-main {
+    font-size: 3rem;
+    color: gray;
+    text-align: center;
+    text-shadow: 1px 2px 3px black;
+}
+
+.categorias {
+    background-color: #88498F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    flex-flow: wrap;
+}
+.cada-categoria {
+    border: 4px solid #4f0147;
+    background-color: #88498F;
+    border-radius: 20px;
+    width: 340px;
+    height: 390px;
+    margin: 10px;
+}
+.categorias img {
+    position: relative;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.datos-importantes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #FFFFFA;
+}
+
+/*ASIDE*/
+
+.extra {
+    grid-area: extra;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+}
+/*FOOTER*/
+
+.footer {
+    padding: 10px;
+    background-color: #88498F;
+    grid-area: footer;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.footer div h5 {
+    color:#808080;
+    text-shadow: 1px 2px 3px black;
+}
+.footer div ul {
+    list-style: none;
+}
+.footer div ul li a {
+    color: #ffe4c4;
+    text-decoration: none;
+    padding: 0px 35px;
+}
+.logo-footer {
+    width: 150px;
+}
+
+/*MEDIA QUERIES DESKTOP A MOBILE
+tablet 768px
+mobile 480px
+nota: solo vamos a declarar dentro de la MQ los cambios a realizar, no agregamos ni repetimos el mismo codigo
+*/
+
+@media (max-width:768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 2fr 3fr 1fr;
+        grid-template-areas:
+                "encabezado encabezado"
+                "contenido  contenido"
+                "footer     footer"
+        ;
+}

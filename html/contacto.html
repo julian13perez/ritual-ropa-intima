@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS-->
+
+    <link rel="stylesheet" href="../ccs/style.css">
+
+    <!--FONT-->
+        
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>Contacto - RITUAL</title>
+</head>
+
+<body>
+    <div class="grid-container">
+        <header class="encabezado grid__setter">
+            <nav class="navegador-principal">
+                <h1>Ritual - Intimo & Deportivo</h1>
+                <ul>
+                    <li><a href="../index.html">inicio</a></li>
+                    <li><a href="./shop.html">shop</a></li>
+                    <li><a href="./contacto.html">contacto</a></li>
+                    <li><a href="./sobre-nosotros.html">sobre nosotros</a></li>
+                </ul>
+        
+                <form class="buttons-nav" action="/sumbit" method="post">
+                    <label for="buscar"></label>
+                    <input type="search" name="buscar" id="buscar" placeholder="buscar">
+                    
+                    <button class="buttons-nav">cuenta</button>
+
+                    <button class="buttons-nav">carrito</button>
+                </form>
+            </nav>    
+        </header>
+        
+        <main class="principal">
+            <section>
+                <h1 class="titulos-main">CONTACTOS</h1>
+                <a href="whatsapp:358675849" target="_blank">whatsapp 358675849</a>
+                <a href="email:ritual@gmail.com" target="_blank">email ritual@gmail.com</a>
+                <img src="../assets/imagen-ubicacion.JPG" alt="ubicacion">
+            </section>
+
+            <section>
+                <form action="/submit" method="post">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre">
+
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+
+                    <label for="telefono">Telefono:</label>
+                    <input type="number" name="telefono" id="telefono">
+
+                    <label for="consulta">Consulta:</label>
+                    <textarea name="consulta" id="consulta"></textarea>
+        
+                    <label for="novedades">Recibir novedades</label>
+                    <input type="checkbox" name="novedades" id="novedades">
+
+                    <input type="submit" value="Enviar">
+                </form>
+            </section>
+
+            <section>
+                <h2 class="titulos-main">ESTAMOS AQUI</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d849.0856215280663!2d-64.43043528191494!3d-31.651848508409575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d570053647a9d%3A0xe6587eb657d2cf0!2sRitual_iyd!5e0!3m2!1ses-419!2sar!4v1734374095806!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <div>
+                <img src="../assets/logo_principal.jpeg" alt="logo footer">
+            </div>
+
+            <div class="datos-footer">
+                <h3 class="titulos-footer">NOVEDADES</h3>
+                <p>enterate de las novedades primero que nadie!</p>
+
+                <form action="/submit" method="post">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                    <input type="button" value="Enviar">
+                </form>
+            </div>
+
+            <div class="datos-footer">
+                <h3 class="titulos-footer">MENU</h3>
+                <ul>
+                    <li><a href="../index.html">inicio</a></li>
+                    <li><a href="./shop.html">shop</a></li>
+                    <li><a href="./sobre-nosotros.html">sobre nosotros</a></li>
+                </ul>
+            </div>
+
+            <div class="datos-footer">
+                <h3 class="titulos-footer">CONTACTOS</h3>
+                <ul>
+                    <li><a href="">whatsapp</a></li>
+                    <li><a href="https://www.instagram.com/ritual_iyd/">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/share/18HNoAb3LK/?mibextid=wwXIfr">Facebook</a></li>
+                </ul>            
+            </div>  
+        </footer>
+    </div>    
+</body>
+</html>
