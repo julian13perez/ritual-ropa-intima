@@ -18,79 +18,81 @@
 </head>
 
 <body>
-    <header class="encabezado">
-        <img src="../assets/logo_principal.jpeg" alt="logo principal">
-        <nav class="menu-navegacion">
-            <ul>
-                <li><a href="../index.html">inicio</a></li>
-                <li><a href="./shop.html">shop</a></li>
-                <li><a href="./contacto.html">contacto</a></li>
-                <li><a href="./sobre-nosotros.html">sobre nosotros</a></li>
-             </ul>
-        </nav>
-
-        <form action="/sumbit" method="post">
-            <label for="buscar">buscar</label>
-            <input type="search" name="buscar" id="buscar" placeholder="buscar">
+    <div class="grid-container">
+        <header class="encabezado grid__setter">
+            <nav class="navegador-principal">
+                <ul>
+                    <li><a href="../index.html">inicio</a></li>
+                    <li><a href="./shop.html">shop</a></li>
+                    <li><a href="./contacto.html">contacto</a></li>
+                    <li><a href="./sobre-nosotros.html">sobre nosotros</a></li>
+                </ul>
             
-            <button type="button">cuenta</button>
 
-            <button class="btn-carrito">carrito</button>
-        </form>
-    </header>
+                <form action="/sumbit" method="post">
+                    <label for="buscar"></label>
+                    <input type="search" name="buscar" id="buscar" placeholder="buscar">
+                    
+                    <button class="buttons-nav">cuenta</button>
 
-    <main class="principal">
-        <h1 class="titulos-main">SOBRE NOSOTROS</h1>
-        <section>
+                    <button class="buttons-nav">carrito</button>
+                </form>
+            </nav>
+        </header>
+
+        <main class="principal">
+            <h1 class="titulos-main">SOBRE NOSOTROS</h1>
+            <section>
+                <div>
+                    <img src="../assets/ropa-interior-mujer.jpg" alt="ropa-interior-mujer">
+                    <p class="txt">MARCA DE ROPA</p>
+                    <pre class="txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempus ultricies dolor nec sagittis. Donec arcu massa, suscipit ut ullamcorper id, semper vel dolor. Nam et gravida erat. Vestibulum pulvinar malesuada risus eu vulputate. Etiam semper ante ut sagittis venenatis. Curabitur non ultrices arcu. In ut metus et neque mattis aliquet. Cras mollis, quam in dignissim aliquam, odio nisl maximus felis, mollis dapibus massa metus vitae arcu. Maecenas ut urna eros. Quisque vel leo faucibus, ultrices magna eget, gravida mauris. Quisque at tellus interdum, ultricies ligula ac, mattis eros. Curabitur lectus odio, maximus vitae vehicula eget, ultrices ut ipsum. Cras orci lacus, auctor ac interdum eget, faucibus et neque. Praesent molestie diam sed malesuada elementum. Ut placerat congue maximus.
+
+                    Sed posuere vel est ac aliquet. Quisque fringilla pulvinar magna, a consequat metus convallis pretium. Aenean id tempor neque. Curabitur in est sit amet diam congue ornare id nec erat. Etiam mattis augue ligula, et facilisis justo rhoncus non. Suspendisse eget elit lacus. Suspendisse faucibus odio et eros vestibulum, eu consequat libero semper. Cras sodales convallis nisi, aliquet suscipit erat pharetra non. Phasellus posuere neque vel purus rhoncus mattis. Etiam scelerisque convallis ullamcorper. Phasellus bibendum ornare turpis, faucibus pretium dui semper ut. Aenean sit amet felis vitae tortor placerat mattis. Aenean quis metus eleifend, interdum orci nec, pretium magna. Sed cursus, magna sed porttitor dapibus, urna elit ullamcorper erat, nec volutpat massa sem in odio.
+                    </pre>
+                </div>
+
+                <div>
+                    <img src="../assets/ropa-interior-mujer-2.jpg" alt="ropa-interior-mujer-2">
+                    <pre class="txt">Nam non augue lectus. Nam faucibus diam dolor, ac porttitor nisi consectetur quis. Donec suscipit, metus quis eleifend faucibus, tortor libero porta orci, id rhoncus erat ligula nec odio. Quisque dignissim varius porta. Sed mollis semper justo, nec elementum dui. In hac habitasse platea dictumst. Maecenas sed augue a magna consequat vestibulum. In a auctor odio. Duis efficitur sem a libero tristique tincidunt. Praesent lectus ante, tincidunt vestibulum sagittis ut, tempor eget eros. Ut id semper massa. Praesent ante nisi, suscipit nec scelerisque posuere, faucibus eget ipsum. Nam vehicula, massa quis efficitur venenatis, ligula felis interdum leo, id egestas augue est sed est. Nam eleifend lorem nunc, a pharetra orci scelerisque et.</pre>
+                </div>
+            </section>
+        </main>
+        
+        <footer class="footer">
             <div>
-                <img src="../assets/ropa-interior-mujer.jpg" alt="ropa-interior-mujer">
-                <p class="txt">MARCA DE ROPA</p>
-                <pre class="txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempus ultricies dolor nec sagittis. Donec arcu massa, suscipit ut ullamcorper id, semper vel dolor. Nam et gravida erat. Vestibulum pulvinar malesuada risus eu vulputate. Etiam semper ante ut sagittis venenatis. Curabitur non ultrices arcu. In ut metus et neque mattis aliquet. Cras mollis, quam in dignissim aliquam, odio nisl maximus felis, mollis dapibus massa metus vitae arcu. Maecenas ut urna eros. Quisque vel leo faucibus, ultrices magna eget, gravida mauris. Quisque at tellus interdum, ultricies ligula ac, mattis eros. Curabitur lectus odio, maximus vitae vehicula eget, ultrices ut ipsum. Cras orci lacus, auctor ac interdum eget, faucibus et neque. Praesent molestie diam sed malesuada elementum. Ut placerat congue maximus.
-
-                Sed posuere vel est ac aliquet. Quisque fringilla pulvinar magna, a consequat metus convallis pretium. Aenean id tempor neque. Curabitur in est sit amet diam congue ornare id nec erat. Etiam mattis augue ligula, et facilisis justo rhoncus non. Suspendisse eget elit lacus. Suspendisse faucibus odio et eros vestibulum, eu consequat libero semper. Cras sodales convallis nisi, aliquet suscipit erat pharetra non. Phasellus posuere neque vel purus rhoncus mattis. Etiam scelerisque convallis ullamcorper. Phasellus bibendum ornare turpis, faucibus pretium dui semper ut. Aenean sit amet felis vitae tortor placerat mattis. Aenean quis metus eleifend, interdum orci nec, pretium magna. Sed cursus, magna sed porttitor dapibus, urna elit ullamcorper erat, nec volutpat massa sem in odio.
-                </pre>
+                <img src="../assets/logo_principal.jpeg" alt="logo principal">
             </div>
 
-            <div>
-                <img src="../assets/ropa-interior-mujer-2.jpg" alt="ropa-interior-mujer-2">
-                <pre class="txt">Nam non augue lectus. Nam faucibus diam dolor, ac porttitor nisi consectetur quis. Donec suscipit, metus quis eleifend faucibus, tortor libero porta orci, id rhoncus erat ligula nec odio. Quisque dignissim varius porta. Sed mollis semper justo, nec elementum dui. In hac habitasse platea dictumst. Maecenas sed augue a magna consequat vestibulum. In a auctor odio. Duis efficitur sem a libero tristique tincidunt. Praesent lectus ante, tincidunt vestibulum sagittis ut, tempor eget eros. Ut id semper massa. Praesent ante nisi, suscipit nec scelerisque posuere, faucibus eget ipsum. Nam vehicula, massa quis efficitur venenatis, ligula felis interdum leo, id egestas augue est sed est. Nam eleifend lorem nunc, a pharetra orci scelerisque et.</pre>
+            <div class="datos-footer">
+                <h3 class="titulos-footer">NOVEDADES</h3>
+                <p>enterate de las novedades primero que nadie!</p>
+
+                <form action="/submit" method="post">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                    <input type="button" value="Enviar">
+                </form>
             </div>
-        </section>
-    </main>
-    
-    <footer class="footer">
-        <div>
-            <img src="../assets/logo_principal.jpeg" alt="logo principal">
-        </div>
 
-        <div class="datos-footer">
-            <h3 class="titulos-footer">NOVEDADES</h3>
-            <p>enterate de las novedades primero que nadie!</p>
+            <div class="datos-footer">
+                <h3 class="titulos-footer">MENU</h3>
+                <ul>
+                    <li><a href="../index.html">inicio</a></li>
+                    <li><a href="./shop.html">shop</a></li>
+                    <li><a href="./sobre-nosotros.html">sobre nosotros</a></li>
+                </ul>
+            </div>
 
-            <form action="/submit" method="post">
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email">
-                <input type="button" value="Enviar">
-            </form>
-        </div>
-
-        <div class="datos-footer">
-            <h3 class="titulos-footer">MENU</h3>
-            <ul>
-                <li><a href="../index.html">inicio</a></li>
-                <li><a href="./shop.html">shop</a></li>
-                <li><a href="./sobre-nosotros.html">sobre nosotros</a></li>
-            </ul>
-        </div>
-
-        <div class="datos-footer">
-            <h3 class="titulos-footer">CONTACTOS</h3>
-            <ul>
-                <li><a href="">whatsapp</a></li>
-                <li><a href="https://www.instagram.com/ritual_iyd/">Instagram</a></li>
-                <li><a href="https://www.facebook.com/share/18HNoAb3LK/?mibextid=wwXIfr">Facebook</a></li>
-            </ul>            
-        </div>  
-    </footer>
+            <div class="datos-footer">
+                <h3 class="titulos-footer">CONTACTOS</h3>
+                <ul>
+                    <li><a href="">whatsapp</a></li>
+                    <li><a href="https://www.instagram.com/ritual_iyd/">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/share/18HNoAb3LK/?mibextid=wwXIfr">Facebook</a></li>
+                </ul>            
+            </div>  
+        </footer>
+    </div>    
 </body>
 </html>

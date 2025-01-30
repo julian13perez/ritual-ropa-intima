@@ -27,7 +27,9 @@
     grid-area: encabezado;
 }
 .navegador-principal {
+    z-index: 1000;
     display: flex; 
+    position: fixed;
     justify-content: space-around;
     background-color: #88498F;
     border: 5px solid #4f0147;
@@ -100,9 +102,9 @@
 .categorias {
     background-color: #88498F;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    margin: 10px;
+    margin-bottom: 40px;
     flex-flow: wrap;
 }
 .cada-categoria {
@@ -113,18 +115,30 @@
     height: 390px;
     margin: 10px;
 }
+.cada-categoria a {
+    padding: 20px 0px;
+    margin-bottom: 20px;
+}
 .categorias img {
     position: relative;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     height: 100%;
     border-radius: 20px;
 }
-.datos-importantes {
+.informacion-adicional {
+    background-color: #6f3975;
+    padding: 15px;
+    border-left: 2px #808080;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    color: #FFFFFA;
+    color: #808080;
+    text-shadow: 1px 2px 3px black;
+}
+.informacion-adicional div {
+    margin: 10px;
+    padding: 10px;
 }
 
 /*ASIDE*/
