@@ -8,6 +8,8 @@
 
     <link rel="stylesheet" href="../ccs/style.css">
 
+    <script src="https://kit.fontawesome.com/e373069196.js" crossorigin="anonymous"></script>
+
     <!--FONT-->
         
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,10 +20,13 @@
 </head>
 
 <body>
-    <div class="grid-container">
-        <header class="encabezado grid__setter">
+    <div class="grid-container-contacto">
+        <header class="encabezado">
+            <a href="./index.html">
+                <img src="../assets/IMAGEN-LOGO.png" alt="logo-principal">
+            </a>
+
             <nav class="navegador-principal">
-                <h1>Ritual - Intimo & Deportivo</h1>
                 <ul>
                     <li><a href="../index.html">inicio</a></li>
                     <li><a href="./shop.html">shop</a></li>
@@ -40,48 +45,55 @@
             </nav>    
         </header>
         
-        <main class="principal">
-            <section>
-                <h1 class="titulos-main">CONTACTOS</h1>
-                <a href="whatsapp:358675849" target="_blank">whatsapp 358675849</a>
-                <a href="email:ritual@gmail.com" target="_blank">email ritual@gmail.com</a>
-                <img src="../assets/imagen-ubicacion.JPG" alt="ubicacion">
-            </section>
+        <main class="principal-contacto">
+            <h1 class="titulos-contacto">CONTACTOS</h1>
+            <div class="main-contacto">
+                <div class="contactos">
+                    <a href="https://web.whatsapp.com/" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%3Fhl%3Des-419&emr=1&hl=es-419&ifkv=AVdkyDlwCszTzp639OSpkWynp1dVTug8j6XAh77vplmmUeV6m8_KczmMInkuvI238axUlqRV2V25Dw&ltmpl=default&ltmplcache=2&osid=1&passive=true&rm=false&scc=1&service=mail&ss=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S389628827%3A1738358772508921&ddm=1" target="_blank">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+                </div>
+                
+                <div class="formulario-principal">
+                    <form class="formulario" action="/submit" method="post">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre">
 
-            <section>
-                <form action="/submit" method="post">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" name="nombre" id="nombre">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email">
 
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email">
+                        <label for="telefono">Telefono:</label>
+                        <input type="number" name="telefono" id="telefono">
 
-                    <label for="telefono">Telefono:</label>
-                    <input type="number" name="telefono" id="telefono">
+                        <label for="consulta">Consulta:</label>
+                        <textarea name="consulta" id="consulta"></textarea>
+            
+                        <label for="novedades">Recibir novedades</label>
+                        <input type="checkbox" name="novedades" id="novedades">
 
-                    <label for="consulta">Consulta:</label>
-                    <textarea name="consulta" id="consulta"></textarea>
-        
-                    <label for="novedades">Recibir novedades</label>
-                    <input type="checkbox" name="novedades" id="novedades">
-
-                    <input type="submit" value="Enviar">
-                </form>
-            </section>
-
-            <section>
-                <h2 class="titulos-main">ESTAMOS AQUI</h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d849.0856215280663!2d-64.43043528191494!3d-31.651848508409575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d570053647a9d%3A0xe6587eb657d2cf0!2sRitual_iyd!5e0!3m2!1ses-419!2sar!4v1734374095806!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </section>
-
+                        <input type="submit" value="Enviar">
+                    </form>
+                </div>
+            </div>
         </main>
+
+        <aside class="aside">
+            <h2 class="titulos-contacto">ESTAMOS AQUI</h2>
+            <div class="contenedor-mapa">
+                <img class="imagen-ubicacion" src="../assets/imagen-ubicacion.JPG" alt="ubicacion">
+                <iframe class="imagen-ubicacion" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d849.0856215280663!2d-64.43043528191494!3d-31.651848508409575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d570053647a9d%3A0xe6587eb657d2cf0!2sRitual_iyd!5e0!3m2!1ses-419!2sar!4v1734374095806!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </aside>
 
         <footer class="footer">
             <div>
-                <img src="../assets/logo_principal.jpeg" alt="logo footer">
+                <img class="logo-footer" src="../assets/logo_principal.jpeg" alt="logo-principal">
             </div>
 
-            <div class="datos-footer">
+            <div>
                 <h3 class="titulos-footer">NOVEDADES</h3>
                 <p>enterate de las novedades primero que nadie!</p>
 
@@ -92,7 +104,7 @@
                 </form>
             </div>
 
-            <div class="datos-footer">
+            <div>
                 <h3 class="titulos-footer">MENU</h3>
                 <ul>
                     <li><a href="../index.html">inicio</a></li>
@@ -101,7 +113,7 @@
                 </ul>
             </div>
 
-            <div class="datos-footer">
+            <div>
                 <h3 class="titulos-footer">CONTACTOS</h3>
                 <ul>
                     <li><a href="">whatsapp</a></li>
