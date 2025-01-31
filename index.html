@@ -8,11 +8,13 @@
 
     <link rel="stylesheet" href="./ccs/style.css">
 
+    <script src="https://kit.fontawesome.com/e373069196.js" crossorigin="anonymous"></script>
+
     <!--FONT-->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap" rel="stylesheet">
 
     <title>Home - RITUAL</title>
 </head>
@@ -20,10 +22,13 @@
 <body>
     <div class="grid-container">
        <!-- VAMOS A CREAR LA ESTRUCTURA BASICA DE HTML -->
-        <header class="encabezado grid__setter">
+        <header class="encabezado">
             <!-- menu de navegacion, logo, titulo, redes, carrusel-->
-            <nav class="navegador-principal">
-                <h1>Ritual - Intimo & Deportivo</h1> 
+            <a href="./index.html">
+                <img src="./assets/IMAGEN-LOGO.png" alt="logo-principal">
+            </a>
+
+            <nav class="navegador-principal"> 
                 <ul>
                     <li><a href="./index.html">inicio</a></li>
                     <li><a href="./html/shop.html">shop</a></li>
@@ -42,15 +47,14 @@
             </nav>
         </header>
 
-        <aside class="extra grid__setter">
-            <video class="video" src="./assets/video-deporte.mp4" controls></video>
-            <p id="coleccion-2025">coleccion 2025</p>
-        </aside>
-        
-        <main class="contenido grid__setter">
+        <main class="contenido">
             <!-- contenido principal-->
+            <section class="vista-inicial">
+                <h1>Ritual - Intimo & Deportivo</h1>
+            </section>
+            
             <div class="principal">
-                <h2>RITUAL - Intimo y Deportivo</h2>
+                <h2>Bienvenidos!</h2>
                 <h3 class="titulos-main">CATEGORIAS</h3>
                 <section class="categorias">
                     <div class="cada-categoria">
@@ -89,7 +93,7 @@
             </div>
         </main>
 
-        <footer class="footer grid__setter">
+        <footer class="footer">
             <!-- redes sociales, menu de navegacion, contactos, etc -->
             <div class="datos-footer">
                 <h5 class="titulos-footer">CONTACTOS</h5>
@@ -123,6 +127,10 @@
             <div class="datos-footer">
                 <img class="logo-footer" src="./assets/logo_principal.jpeg" alt="logo principal">
             </div>
+
+            <a href="https://www.facebook.com/share/18HNoAb3LK/?mibextid=wwXIfr" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
 
         </footer>
     </div>    
