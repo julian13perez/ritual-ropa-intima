@@ -7,7 +7,7 @@
     font-family: "Happy Monkey", serif;
 }
 
-/* GRID CONTAINER*/
+/*GRID CONTAINER HOME*/
 
 .grid-container {
     display: grid;
@@ -19,6 +19,8 @@
             "footer     footer     footer"
     ;
 }
+
+/*GRID CONTAINER CONTACT*/
 
 .grid-container-contacto {
     display: grid;
@@ -40,33 +42,33 @@
     width: 100%;
     background-color: #8174A0; 
     display: flex;
-    z-index: 1000;
     justify-content: space-between;
     align-items: center;
     color: black;
     text-shadow: 3px 3px 4px #ffffff;
     flex-wrap: wrap;
+    z-index: 1000;
 }
 .encabezado a img {
     width: 50px;
     height: 50px;
-    margin: 15px 15px 15px 30px;
+    margin: 15px;
     mix-blend-mode: multiply;
 }
 .navegador-principal {
     display: flex; 
     justify-content: flex-end;
+    align-items: center;
     padding-right: 22px;
     text-transform: capitalize;
-    align-items: center;
     flex-wrap: wrap;
 }   
 .encabezado nav ul {
     display: flex;
     justify-content: space-between;
     list-style: none;
-    flex-wrap: wrap;
     padding: 0;
+    flex-wrap: wrap;
 }
 .encabezado nav ul li a {
     color: #000000;
@@ -85,10 +87,12 @@
 
 /*MAIN*/
 
+/*MAIN HOME*/
 .contenido {
     display: flex;
     flex-direction: column;
     grid-area: contenido;
+    background-color: #8174A0;
 }
 .vista-inicial {
     text-align: center;
@@ -104,77 +108,13 @@
     justify-content: center;
     align-items: center;  
 }
-.principal {
-    background-color: #8174A0;
-}
-.principal-contacto {
-    background-color: #A888B5;
-    grid-area: principal-contacto;
-}
-.main-contacto {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 50vh;
-}
-.imagen-ubicacion {
-    width: 33%;
-    border-radius: 20px;
-    border: 4px solid #808080;
-    margin: 20px;
-}
-.contactos {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.contactos a {
-    padding: 20px;
-    margin: 10px;
-    background-color: #8174A0;
-    border-radius: 20px;
-} 
-.fa-brands {
-    font-size: 50px;
-    color: #139c13;
-}
-.fa-regular {
-    font-size: 50px;
-    color: #b81e1e;
-}
-.formulario-principal {
-    width: 50%;
-}
-.titulos-contacto {
-    width: 100%;
-    height: 90px;
-    background-color: #272727;
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0px;
-    text-shadow: 3px 3px 4px #88498F;
-    font-size: 30px;
-}
-.principal-contacto section a {
-    text-decoration: none;
-}
-.principal h2 {
+.bienvenida {
     text-align: center;
     padding: 20px 0px;
     background-color: #272727;
     color: #A888B5;
     text-shadow: 1px 2px 3px #000000;
     font-size: 40px;
-
-}
-.txt {
-    color: #FFFFFA;
-    font-style: italic;
-    font-weight: lighter;
 }
 .titulos-main {
     font-size: 40px;
@@ -242,6 +182,55 @@
     margin: 10px;
     padding: 10px;
 }
+
+/* MAIN CONTACTO */
+
+.contenido-contacto {
+    background-color: #A888B5;
+    grid-area: principal-contacto;
+}
+.titulos-contacto {
+    width: 100%;
+    height: 90px;
+    background-color: #272727;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    text-shadow: 3px 3px 4px #88498F;
+    font-size: 30px;
+}
+.main-contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+}
+.contactos {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contactos a {
+    padding: 20px;
+    margin: 10px;
+    background-color: #8174A0;
+    border-radius: 20px;
+} 
+.fa-whatsapp {
+    font-size: 50px;
+    color: #139c13;
+}
+.fa-envelope {
+    font-size: 50px;
+    color: #b81e1e;
+}
+.formulario-principal {
+    width: 50%;
+}
 .formulario {
     display: flex;
     flex-direction: column;
@@ -257,6 +246,34 @@
     margin: 5px;
     padding: 2px;
 }
+
+/* MAIN SOBRE NOSTROS */
+
+.contenido-sobre-nosotros {
+    background-color: #A888B5;
+}
+.sobre-nosotros-main {
+    max-width: 1000px;
+    margin: auto;
+}
+.sobre-nosotros-main img {
+    width: 50%;
+    border-radius: 40px;
+    padding: 20px;
+    margin: 20px;
+}
+.sobre-nosotros-seccion {
+    padding: 50px;
+}
+.sobre-nosotros-content {
+    display: flex;
+    align-items: center;
+}
+.sobre-nosotros-content p {
+    color: #000000;
+    line-height: 1.5;
+}
+
 /*FOOTER*/
 
 .footer {
@@ -290,23 +307,43 @@
     width: 110px;
     border-radius: 10px;
 }
-
+.footer p {
+    padding: 10px;
+}
+.fa-brands {
+    font-size: 30px;
+    padding: 5px;    
+}
 .fa-facebook-f {
-    font-size: 50px;
     color: #1f1fc0;
 }
+.fa-instagram {
+    color: #b81e1e;
+}
+.fa-whatsapp{
+    color: #139c13;
+}
+
 /*ASIDE*/
+
 .aside {
     grid-area: aside;
 }
 .contenedor-mapa {
-    background-color: #6f3975;
+    background-color: #A888B5;
     padding: 50px;
     text-align: center;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
+.imagen-ubicacion {
+    width: 33%;
+    border-radius: 20px;
+    border: 4px solid #808080;
+    margin: 20px;
+}
+
 /*MEDIA QUERIES DESKTOP A MOBILE
 tablet 768px
 mobile 480px
@@ -328,13 +365,11 @@ nota: solo vamos a declarar dentro de la MQ los cambios a realizar, no agregamos
     }
     .grid-container {
         grid-template-rows: 0.3fr 2fr 0.3fr;
-        grid-template-areas: 
-            "encabezado encabezado encabezado"
-            "contenido  contenido  contenido"
-            "footer     footer     footer"
-    ;
     }
 }
+
+/* TABLET */
+
 @media (max-width: 768px) {
     .footer {
         flex-direction: column;
@@ -349,14 +384,11 @@ nota: solo vamos a declarar dentro de la MQ los cambios a realizar, no agregamos
     }
     .grid-container {
         grid-template-rows: 0.3fr 2fr 0.3fr;
-        grid-template-areas: 
-            "encabezado encabezado encabezado"
-            "contenido  contenido  contenido"
-            "footer     footer     footer"
-    ;
-    }
     }
 }
+
+/* TELEFONO CELULAR */
+
 @media (max-width: 480px) {
     .cada-categoria {
         width: 180px;

@@ -8,6 +8,10 @@
 
     <link rel="stylesheet" href="../ccs/style.css">
 
+    <!--ICONS-->
+
+    <script src="https://kit.fontawesome.com/e373069196.js" crossorigin="anonymous"></script>
+
     <!--FONT-->
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,8 +22,13 @@
 </head>
 
 <body>
-    <div class="grid-container">
-        <header class="encabezado grid__setter">
+    <div class="grid-container-sobre-nosotros">
+        <header class="encabezado">
+            <!--BARRA DE NAVEGACION-->
+            <a href="./index.html">
+                <img src="../assets/IMAGEN-LOGO.png" alt="logo-principal">
+            </a>
+
             <nav class="navegador-principal">
                 <ul>
                     <li><a href="../index.html">inicio</a></li>
@@ -28,9 +37,7 @@
                     <li><a href="./sobre-nosotros.html">sobre nosotros</a></li>
                 </ul>
             
-
-                <form action="/sumbit" method="post">
-                    <label for="buscar"></label>
+                <form class="buttons-nav" action="/sumbit" method="post">
                     <input type="search" name="buscar" id="buscar" placeholder="buscar">
                     
                     <button class="buttons-nav">cuenta</button>
@@ -40,28 +47,36 @@
             </nav>
         </header>
 
-        <main class="principal">
-            <h1 class="titulos-main">SOBRE NOSOTROS</h1>
-            <section>
-                <div>
-                    <img src="../assets/ropa-interior-mujer.jpg" alt="ropa-interior-mujer">
-                    <p class="txt">MARCA DE ROPA</p>
-                    <pre class="txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempus ultricies dolor nec sagittis. Donec arcu massa, suscipit ut ullamcorper id, semper vel dolor. Nam et gravida erat. Vestibulum pulvinar malesuada risus eu vulputate. Etiam semper ante ut sagittis venenatis. Curabitur non ultrices arcu. In ut metus et neque mattis aliquet. Cras mollis, quam in dignissim aliquam, odio nisl maximus felis, mollis dapibus massa metus vitae arcu. Maecenas ut urna eros. Quisque vel leo faucibus, ultrices magna eget, gravida mauris. Quisque at tellus interdum, ultricies ligula ac, mattis eros. Curabitur lectus odio, maximus vitae vehicula eget, ultrices ut ipsum. Cras orci lacus, auctor ac interdum eget, faucibus et neque. Praesent molestie diam sed malesuada elementum. Ut placerat congue maximus.
+        <main class="contenido-sobre-nosotros">
+            <!--CONTENIDO PRINCIPAL-->
+            <section class="titulos-contacto">
+                <h1>SOBRE NOSOTROS</h1>
+            </section>  
+            <div class="sobre-nosotros-main">
+                <!--INFORMACION SOBRE LA MARCA-->
+                <section class="sobre-nosotros-seccion">
+                    <div class="sobre-nosotros-content">
+                        <img src="../assets/ropa-interior-mujer.jpg" alt="ropa-interior-mujer">
+                        <p>
+                            La marca nace de la pasión y creatividad con un objetivo claro: ofrecerte algo diferente y especial.
+                            Nos mueve el deporte, la actividad, una persona audaz y auténtica, por eso nuestras prendas exclusivas te dan la mayor comodidad para cualquier actividad que decidas realizar.
+                            
+                            Desde nuestros inicios, nos esforzamos por brindar productos de calidad que destaquen por su diseño y originalidad.
+                        </p>
+                    </div>
 
-                    Sed posuere vel est ac aliquet. Quisque fringilla pulvinar magna, a consequat metus convallis pretium. Aenean id tempor neque. Curabitur in est sit amet diam congue ornare id nec erat. Etiam mattis augue ligula, et facilisis justo rhoncus non. Suspendisse eget elit lacus. Suspendisse faucibus odio et eros vestibulum, eu consequat libero semper. Cras sodales convallis nisi, aliquet suscipit erat pharetra non. Phasellus posuere neque vel purus rhoncus mattis. Etiam scelerisque convallis ullamcorper. Phasellus bibendum ornare turpis, faucibus pretium dui semper ut. Aenean sit amet felis vitae tortor placerat mattis. Aenean quis metus eleifend, interdum orci nec, pretium magna. Sed cursus, magna sed porttitor dapibus, urna elit ullamcorper erat, nec volutpat massa sem in odio.
-                    </pre>
-                </div>
-
-                <div>
-                    <img src="../assets/ropa-interior-mujer-2.jpg" alt="ropa-interior-mujer-2">
-                    <pre class="txt">Nam non augue lectus. Nam faucibus diam dolor, ac porttitor nisi consectetur quis. Donec suscipit, metus quis eleifend faucibus, tortor libero porta orci, id rhoncus erat ligula nec odio. Quisque dignissim varius porta. Sed mollis semper justo, nec elementum dui. In hac habitasse platea dictumst. Maecenas sed augue a magna consequat vestibulum. In a auctor odio. Duis efficitur sem a libero tristique tincidunt. Praesent lectus ante, tincidunt vestibulum sagittis ut, tempor eget eros. Ut id semper massa. Praesent ante nisi, suscipit nec scelerisque posuere, faucibus eget ipsum. Nam vehicula, massa quis efficitur venenatis, ligula felis interdum leo, id egestas augue est sed est. Nam eleifend lorem nunc, a pharetra orci scelerisque et.</pre>
-                </div>
-            </section>
+                    <div class="sobre-nosotros-content">
+                        <p>En RITUAL tenemos un equipo apasionado y comprometido, conformado por mentes creativas que trabajan incansablemente para ofrecerte una experiencia excepcional. Desde nuestros talentosos diseñadores hasta nuestro equipo de producción y atención al cliente, todos compartimos la misma pasión. Nos enorgullece decir que nuestra marca ha crecido y evolucionado junto a nuestra comunidad. Queremos ser parte de tu historia, acompañarte en tus aventuras y ayudarte a expresar tu personalidad a través de nuestras prendas.</p>
+                        <img src="../assets/ropa-interior-mujer-2.jpg" alt="ropa-interior-mujer-2">
+                    </div>
+                </section>
+            </div>
         </main>
         
         <footer class="footer">
+            <!--CONTACTOS, REDES-->
             <div>
-                <img src="../assets/logo_principal.jpeg" alt="logo principal">
+                <img class="logo-footer" src="../assets/logo_principal.jpeg" alt="logo principal">
             </div>
 
             <div class="datos-footer">

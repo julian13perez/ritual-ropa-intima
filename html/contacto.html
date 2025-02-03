@@ -8,6 +8,8 @@
 
     <link rel="stylesheet" href="../ccs/style.css">
 
+    <!--ICONS-->
+
     <script src="https://kit.fontawesome.com/e373069196.js" crossorigin="anonymous"></script>
 
     <!--FONT-->
@@ -17,11 +19,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap" rel="stylesheet">
 
     <title>Contacto - RITUAL</title>
-</head>
+</head> 
 
 <body>
     <div class="grid-container-contacto">
         <header class="encabezado">
+            <!--BARRA DE NAVEGACION-->
             <a href="./index.html">
                 <img src="../assets/IMAGEN-LOGO.png" alt="logo-principal">
             </a>
@@ -35,7 +38,6 @@
                 </ul>
         
                 <form class="buttons-nav" action="/sumbit" method="post">
-                    <label for="buscar"></label>
                     <input type="search" name="buscar" id="buscar" placeholder="buscar">
                     
                     <button class="buttons-nav">cuenta</button>
@@ -45,10 +47,13 @@
             </nav>    
         </header>
         
-        <main class="principal-contacto">
+        <main class="contenido-contacto">
+            <!--CONTENIDO PRINCIPAL CONTACTOS-->
             <h1 class="titulos-contacto">CONTACTOS</h1>
+            
             <div class="main-contacto">
                 <div class="contactos">
+                    <!--CONTACTOS-->
                     <a href="https://web.whatsapp.com/" target="_blank">
                         <i class="fa-brands fa-whatsapp"></i>
                     </a>
@@ -58,18 +63,19 @@
                 </div>
                 
                 <div class="formulario-principal">
+                    <!--FORMULARIO PARA E-MAIL-->
                     <form class="formulario" action="/submit" method="post">
                         <label for="nombre">Nombre:</label>
-                        <input type="text" name="nombre" id="nombre">
+                        <input type="text" name="nombre" id="nombre" required>
 
                         <label for="email">Email:</label>
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" id="email" required>
 
                         <label for="telefono">Telefono:</label>
-                        <input type="number" name="telefono" id="telefono">
+                        <input type="number" name="telefono" id="telefono" required>
 
                         <label for="consulta">Consulta:</label>
-                        <textarea name="consulta" id="consulta"></textarea>
+                        <textarea name="consulta" id="consulta" required></textarea>
             
                         <label for="novedades">Recibir novedades</label>
                         <input type="checkbox" name="novedades" id="novedades">
@@ -81,6 +87,7 @@
         </main>
 
         <aside class="aside">
+            <!--DIRECCION Y MAPA-->
             <h2 class="titulos-contacto">ESTAMOS AQUI</h2>
             <div class="contenedor-mapa">
                 <img class="imagen-ubicacion" src="../assets/imagen-ubicacion.JPG" alt="ubicacion">
@@ -89,6 +96,7 @@
         </aside>
 
         <footer class="footer">
+            <!--CONTACTOS, REDES-->
             <div>
                 <img class="logo-footer" src="../assets/logo_principal.jpeg" alt="logo-principal">
             </div>

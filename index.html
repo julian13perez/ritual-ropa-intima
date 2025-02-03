@@ -8,6 +8,8 @@
 
     <link rel="stylesheet" href="./ccs/style.css">
 
+    <!--ICONS-->
+
     <script src="https://kit.fontawesome.com/e373069196.js" crossorigin="anonymous"></script>
 
     <!--FONT-->
@@ -21,9 +23,8 @@
 
 <body>
     <div class="grid-container">
-       <!-- VAMOS A CREAR LA ESTRUCTURA BASICA DE HTML -->
         <header class="encabezado">
-            <!-- menu de navegacion, logo, titulo, redes, carrusel-->
+            <!--BARRA DE NAVEGACION-->
             <a href="./index.html">
                 <img src="./assets/IMAGEN-LOGO.png" alt="logo-principal">
             </a>
@@ -37,7 +38,6 @@
                 </ul>
 
                 <form class="buttons-nav" action="/sumbit" method="post">
-                    <label for="buscar"></label>
                     <input type="search" name="buscar" id="buscar" placeholder="buscar">
                     
                     <button class="buttons-nav">cuenta</button>
@@ -48,13 +48,14 @@
         </header>
 
         <main class="contenido">
-            <!-- contenido principal-->
+            <!-- CONTENIDO PRINCIPAL-->
             <section class="vista-inicial">
                 <h1>Ritual - Intimo & Deportivo</h1>
             </section>
             
-            <div class="principal">
-                <h2>Bienvenidos!</h2>
+            <div>
+                <h2 class="bienvenida">Bienvenidos!</h2>
+                <!--CATEGORIAS-->
                 <h3 class="titulos-main">CATEGORIAS</h3>
                 <section class="categorias">
                     <div class="cada-categoria">
@@ -73,6 +74,7 @@
                     </div>
                 </section>
 
+                <!--INFORMACION ADICIONAL-->
                 <section class="informacion-adicional">
                     <div>
                         <h4>CUOTAS SIN INTERES</h4>
@@ -88,20 +90,31 @@
                         <h4>COMPRA SEGURA</h4>
                         <p>protegemos tus datos</p>
                     </div>
-
                 </section>
             </div>
         </main>
 
         <footer class="footer">
-            <!-- redes sociales, menu de navegacion, contactos, etc -->
+            <!--CONTACTOS, REDES-->
             <div class="datos-footer">
                 <h5 class="titulos-footer">CONTACTOS</h5>
                 <ul>
-                    <li><a href="">whatsapp</a></li>
-                    <li><a href="https://www.instagram.com/ritual_iyd/">Instagram</a></li>
-                    <li><a href="https://www.facebook.com/share/18HNoAb3LK/?mibextid=wwXIfr">Facebook</a></li>
-                </ul>            
+                    <li>
+                        <a href="https://web.whatsapp.com/" target="_blank">
+                            <i class="fa-brands fa-whatsapp"></i>whatsapp
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/ritual_iyd/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>instagram
+                        </a>
+                    </li>    
+                    <li>
+                        <a href="https://www.facebook.com/share/18HNoAb3LK/?mibextid=wwXIfr" target="_blank">
+                            <i class="fa-brands fa-facebook-f"></i>Facebook
+                        </a>
+                    </li>
+                </ul>           
             </div>
 
             <div class="datos-footer">
@@ -127,11 +140,6 @@
             <div>
                 <img class="logo-footer" src="./assets/logo_principal.jpeg" alt="logo-principal">
             </div>
-
-            <a href="https://www.facebook.com/share/18HNoAb3LK/?mibextid=wwXIfr" target="_blank">
-                <i class="fa-brands fa-facebook-f"></i>
-            </a>
-
         </footer>
     </div>    
 </body>
