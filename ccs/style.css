@@ -12,7 +12,7 @@
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 0.3fr 4fr 0.3fr;
+    grid-template-rows: 0.3fr 3.5fr 0.3fr;
     grid-template-areas: 
             "encabezado encabezado encabezado"
             "contenido  contenido  contenido"
@@ -33,10 +33,9 @@
 }
 
 /*HEADER*/
+
 .encabezado {
     grid-area: encabezado;
-}
-.encabezado {
     padding: 10px;
     width: 100%;
     background-color: #8174A0; 
@@ -46,13 +45,13 @@
     align-items: center;
     color: black;
     text-shadow: 3px 3px 4px #ffffff;
+    flex-wrap: wrap;
 }
 .encabezado a img {
     width: 50px;
     height: 50px;
     margin: 15px 15px 15px 30px;
     mix-blend-mode: multiply;
-    
 }
 .navegador-principal {
     display: flex; 
@@ -60,26 +59,29 @@
     padding-right: 22px;
     text-transform: capitalize;
     align-items: center;
+    flex-wrap: wrap;
 }   
 .encabezado nav ul {
     display: flex;
     justify-content: space-between;
     list-style: none;
+    flex-wrap: wrap;
+    padding: 0;
 }
 .encabezado nav ul li a {
     color: #000000;
     text-decoration: none;
-    padding: 0px 35px;
+    padding: 10px 20px;
 }
-.buttons-nav {
+.buttons-nav input, .buttons-nav button {
     color: #000000;
-}
-.buttons-nav button {
     background-color: #A888B5;
     border-radius: 4px;
-    padding: 2px;
+    padding: 5px 10px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
 }
-
 
 /*MAIN*/
 
@@ -91,19 +93,19 @@
 .vista-inicial {
     text-align: center;
     width: 100%;
-    height: 60vh;
+    height: 50vh;
     color: #000000;
-    font-size: 50px;
+    font-size: 40px;
     background-image: url(../assets/FONDO-DEPORTIVO.jpg);
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-}
-.vista-inicial h1 {
-    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
 }
 .principal {
-    background-color: #88498F; 
+    background-color: #8174A0;
 }
 .principal-contacto {
     background-color: #A888B5;
@@ -175,15 +177,16 @@
     font-weight: lighter;
 }
 .titulos-main {
-    font-size: 60px;
-    margin: 40px;
-    color: gray;
+    font-size: 40px;
+    margin: 20px 0px;
+    color: #808080;
     text-align: center;
-    text-shadow: 3px 3px 4px black;
+    text-shadow: 3px 3px 4px #000000;
 }
 .categorias {
-    background-color: #88498F;
+    background-color: #8174A0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     gap: 20px;
     align-items: center;
@@ -203,17 +206,14 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
     text-decoration: none;
     padding: 10px 20px;
     color: #000000;
     border-radius: 20px;
     text-align: center;
-    width: 40%;
 }
 .cada-categoria a:hover {
     background: rgba(0, 0, 0, 0.8));
@@ -229,7 +229,7 @@
     transition: transform 0.3s ease-in-out;
 }
 .informacion-adicional {
-    background-color: #6f3975;
+    background-color: #5a4f75;
     padding: 15px;
     border-left: 2px #808080;
     display: flex;
@@ -262,26 +262,32 @@
 .footer {
     grid-area: footer;
     padding: 10px;
-    background-color: #88498F;
+    background-color: #8174A0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    align-items: flex-end;
+    align-items: center;
+    text-align: center;
+}
+.footer div {
+    margin: 10px;
 }
 .footer div h5 {
     color:#808080;
     text-shadow: 1px 2px 3px black;
-    text-align: start;
 }
 .footer div ul {
     list-style: none;
+    padding: 0px;
 }
 .footer div ul li a {
     color: #000000;
     text-decoration: none;
-    padding: 0px 35px;
+    padding: 5px 0px;
+    display: block;
 }
 .logo-footer {
-    width: 90px;
+    width: 110px;
     border-radius: 10px;
 }
 
@@ -307,8 +313,71 @@ mobile 480px
 nota: solo vamos a declarar dentro de la MQ los cambios a realizar, no agregamos ni repetimos el mismo codigo
 */
 
+@media (max-width: 780px) {
+    .navegador-principal ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cada-categoria {
+        width: 220px;
+        height: 260px;
+    }
+    .vista-inicial {
+        font-size: 30px;
+        height: 40vh;
+    }
+    .grid-container {
+        grid-template-rows: 0.3fr 2fr 0.3fr;
+        grid-template-areas: 
+            "encabezado encabezado encabezado"
+            "contenido  contenido  contenido"
+            "footer     footer     footer"
+    ;
+    }
+}
 @media (max-width: 768px) {
     .footer {
-        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navegador-principal {
+        flex-direction: column;
+        align-items: center;
+    }
+    .encabezado a img {
+        margin: 10px auto;
+    }
+    .grid-container {
+        grid-template-rows: 0.3fr 2fr 0.3fr;
+        grid-template-areas: 
+            "encabezado encabezado encabezado"
+            "contenido  contenido  contenido"
+            "footer     footer     footer"
+    ;
+    }
+    }
+}
+@media (max-width: 480px) {
+    .cada-categoria {
+        width: 180px;
+        height: 220px;
+    }
+    .titulos-main {
+        font-size: 30px;
+    }
+    .vista-inicial {
+        font-size: 24px;
+        height: 30vh;
+    }
+    .encabezado nav ul li a {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+    .buttons-nav input, .buttons-nav button {
+        padding: 5px;
+        font-size: 14px;
+    }
+    .footer div h5, .footer div ul li a {
+        font-size: 14px;
     }
 }
