@@ -7,7 +7,7 @@
     font-family: "Happy Monkey", serif;
 }
 
-/*GRID CONTAINER HOME*/
+/*GRID CONTAINER HOME
 
 .grid-container {
     display: grid;
@@ -19,8 +19,9 @@
             "footer     footer     footer"
     ;
 }
+*/
 
-/*GRID CONTAINER CONTACT*/
+/*GRID CONTAINER CONTACT
 
 .grid-container-contacto {
     display: grid;
@@ -33,46 +34,42 @@
             "footer     footer    footer"
     ;
 }
+*/
 
 /*HEADER*/
 
 .encabezado {
-    grid-area: encabezado;
-    padding: 10px;
-    width: 100%;
-    background-color: #8174A0; 
+    background-color: #f8e7f6; 
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: black;
-    text-shadow: 3px 3px 4px #ffffff;
-    flex-wrap: wrap;
-    z-index: 1000;
+    box-shadow: 0px 3px 9px #947297;
 }
-.encabezado a img {
-    width: 50px;
-    height: 50px;
-    margin: 15px;
-    mix-blend-mode: multiply;
+.principal-logo {
+    margin: 1rem;
+    padding: 0.2rem;
+    text-decoration: none;
+    color: #8174A0;
+    letter-spacing: 1.3px;
+    font-size: 2.2rem;
+    text-shadow: 6px 6px 10px #272727;
 }
 .navegador-principal {
     display: flex; 
     justify-content: flex-end;
     align-items: center;
-    padding-right: 22px;
-    text-transform: capitalize;
-    flex-wrap: wrap;
 }   
 .encabezado nav ul {
     display: flex;
     justify-content: space-between;
     list-style: none;
-    padding: 0;
-    flex-wrap: wrap;
+    width: 100%;
+    margin: 0px 12px;
+    padding: 8px;
 }
 .encabezado nav ul li a {
     color: #000000;
-    text-decoration: none;
     padding: 10px 20px;
 }
 .buttons-nav input, .buttons-nav button {
@@ -185,27 +182,23 @@
 
 /* MAIN CONTACTO */
 
-.contenido-contacto {
-    background-color: #A888B5;
-    grid-area: principal-contacto;
-}
 .titulos-contacto {
-    width: 100%;
-    height: 90px;
-    background-color: #272727;
-    color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 0px;
     text-shadow: 3px 3px 4px #88498F;
     font-size: 30px;
 }
-.main-contacto {
+.primer-titulo {
+    margin-top: 90px;
+    background-color: #DD88CF;
+    color: #F8E7F6;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 50vh;
+    padding: 1rem;
+    margin-bottom: 0px;
+    text-shadow: 5px 5px 4px #4B164C ;
 }
 .contactos {
     width: 50%;
