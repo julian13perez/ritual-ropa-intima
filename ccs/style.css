@@ -37,14 +37,21 @@
 */
 
 /*HEADER*/
-
 .encabezado {
     background-color: #f8e7f6; 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: black;
+    color: #8174A0;
     box-shadow: 0px 3px 9px #947297;
+}
+.encabezado nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 100%;
+    margin: 0px 12px;
+    padding: 8px;
 }
 .principal-logo {
     margin: 1rem;
@@ -60,31 +67,17 @@
     justify-content: flex-end;
     align-items: center;
 }   
-.encabezado nav ul {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    width: 100%;
-    margin: 0px 12px;
-    padding: 8px;
+.nav-options {
+    color: #8174A0;
+    text-decoration: underline 0.1rem;
+    text-underline-offset: 0.7rem;
 }
-.encabezado nav ul li a {
-    color: #000000;
-    padding: 10px 20px;
+.btn-navegador {
+    color: #DD88CF;
+    border-color: #DD88CF;
+    border-radius: 1.1rem;
 }
-.buttons-nav input, .buttons-nav button {
-    color: #000000;
-    background-color: #A888B5;
-    border-radius: 4px;
-    padding: 5px 10px;
-    margin: 5px;
-    border: none;
-    cursor: pointer;
-}
-
 /*MAIN*/
-
-/*MAIN HOME*/
 .contenido {
     display: flex;
     flex-direction: column;
@@ -270,11 +263,10 @@
 /*FOOTER*/
 
 .footer {
-    grid-area: footer;
     padding: 10px;
     background-color: #8174A0;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     text-align: center;
@@ -316,7 +308,6 @@
 .fa-whatsapp{
     color: #139c13;
 }
-
 /*ASIDE*/
 
 .aside {
@@ -342,7 +333,7 @@ tablet 768px
 mobile 480px
 nota: solo vamos a declarar dentro de la MQ los cambios a realizar, no agregamos ni repetimos el mismo codigo
 */
-
+/*
 @media (max-width: 780px) {
     .navegador-principal ul {
         flex-direction: column;
@@ -362,7 +353,7 @@ nota: solo vamos a declarar dentro de la MQ los cambios a realizar, no agregamos
 }
 
 /* TABLET */
-
+/*
 @media (max-width: 768px) {
     .footer {
         flex-direction: column;
@@ -379,9 +370,9 @@ nota: solo vamos a declarar dentro de la MQ los cambios a realizar, no agregamos
         grid-template-rows: 0.3fr 2fr 0.3fr;
     }
 }
-
+*/
 /* TELEFONO CELULAR */
-
+/*
 @media (max-width: 480px) {
     .cada-categoria {
         width: 180px;
@@ -406,3 +397,4 @@ nota: solo vamos a declarar dentro de la MQ los cambios a realizar, no agregamos
         font-size: 14px;
     }
 }
+*/
