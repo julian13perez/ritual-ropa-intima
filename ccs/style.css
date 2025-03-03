@@ -1,49 +1,18 @@
 /* RESET */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Happy Monkey", serif;
 }
-
-/*GRID CONTAINER HOME
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 0.3fr 3.5fr 0.3fr;
-    grid-template-areas: 
-            "encabezado encabezado encabezado"
-            "contenido  contenido  contenido"
-            "footer     footer     footer"
-    ;
-}
-*/
-
-/*GRID CONTAINER CONTACT
-
-.grid-container-contacto {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 0.3fr 4fr 0.3;
-    grid-template-areas: 
-            "encabezado encabezado encabezado"
-            "principal-contacto principal-contacto principal-contacto"
-            "aside     aside      aside"
-            "footer     footer    footer"
-    ;
-}
-*/
-
 /*HEADER*/
 .encabezado {
-    background-color: #f8e7f6; 
+    background-color: #8174A0; 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #8174A0;
-    box-shadow: 0px 3px 9px #947297;
+    color: #f8e7f6;
+    box-shadow: 0px 3px 9px #634d64;
 }
 .encabezado nav ul {
     display: flex;
@@ -57,10 +26,10 @@
     margin: 1rem;
     padding: 0.2rem;
     text-decoration: none;
-    color: #8174A0;
+    color: #f8e7f6;
     letter-spacing: 1.3px;
     font-size: 2.2rem;
-    text-shadow: 6px 6px 10px #272727;
+    text-shadow: 6px 6px 10px #000000;
 }
 .navegador-principal {
     display: flex; 
@@ -68,14 +37,25 @@
     align-items: center;
 }   
 .nav-options {
-    color: #8174A0;
+    color: #f8e7f6;
     text-decoration: underline 0.1rem;
     text-underline-offset: 0.7rem;
+}
+.nav-options:hover {
+    color: #DD88CF;
 }
 .btn-navegador {
     color: #DD88CF;
     border-color: #DD88CF;
     border-radius: 1.1rem;
+}
+.btn-navegador:hover {
+    background-color: #f8e7f6;
+    color: #000000;
+    border-color: #000000;
+}
+.btn-2:hover {
+    background-color: #8174A0;
 }
 /*MAIN*/
 .contenido {
@@ -146,7 +126,7 @@
     text-align: center;
 }
 .cada-categoria a:hover {
-    background: rgba(0, 0, 0, 0.8));
+    background: rgba(0, 0, 0, 0.8);
 }
 .cada-categoria:hover img {
     transform: scale(1.05);
@@ -172,67 +152,49 @@
     margin: 10px;
     padding: 10px;
 }
-
 /* MAIN CONTACTO */
-
-.titulos-contacto {
+.title-contact-1 {
+    margin-top: 5.2rem;
+    margin-bottom: 0rem;
+    padding: 2.2rem;
+    color: #8174A0;
+    background-color: #f8e7f6;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-shadow: 3px 3px 4px #88498F;
-    font-size: 30px;
+    text-shadow: 4px 6px 9px #543554;
 }
-.primer-titulo {
-    margin-top: 90px;
-    background-color: #DD88CF;
-    color: #F8E7F6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    margin-bottom: 0px;
-    text-shadow: 5px 5px 4px #4B164C ;
-}
-.contactos {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.contactos a {
-    padding: 20px;
-    margin: 10px;
+.title-contact-2 {
+    color: #f8e7f6;
     background-color: #8174A0;
-    border-radius: 20px;
-} 
-.fa-whatsapp {
-    font-size: 50px;
-    color: #139c13;
-}
-.fa-envelope {
-    font-size: 50px;
-    color: #b81e1e;
-}
-.formulario-principal {
-    width: 50%;
-}
-.formulario {
     display: flex;
-    flex-direction: column;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 4px 6px 9px #dbdbdbd6;
+    padding: 1rem;
+    box-shadow: inset 0px 8px 7px 0px #634d64;
+}
+.formulario-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8e7f6;
+    padding: 0.7rem;
+}
+.formulario-contact form {
+    width: 75%;
+}
+.contenedor-mapa {
+    background-color: #8174A0;
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
 }
-.formulario input {
-    margin: 5px;
-    width: 50%;
-    padding: 5px;
+.imagen-ubicacion {
+    max-width: 34rem;
+    border-radius: 20px;
+    margin: 20px;
 }
-.formulario textarea {
-    margin: 5px;
-    padding: 2px;
-}
-
 /* MAIN SOBRE NOSTROS */
 
 .contenido-sobre-nosotros {
@@ -261,140 +223,38 @@
 }
 
 /*FOOTER*/
-
-.footer {
-    padding: 10px;
-    background-color: #8174A0;
+.pie-pag {
+    background-color: #f8e7f6;
+    color: #8174A0;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     align-items: center;
-    text-align: center;
-}
-.footer div {
-    margin: 10px;
-}
-.footer div h5 {
-    color:#808080;
-    text-shadow: 1px 2px 3px black;
-}
-.footer div ul {
-    list-style: none;
-    padding: 0px;
-}
-.footer div ul li a {
-    color: #000000;
-    text-decoration: none;
-    padding: 5px 0px;
-    display: block;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .logo-footer {
-    width: 110px;
-    border-radius: 10px;
+    width: 6.4rem;
+    border-radius: 3rem;
 }
-.footer p {
-    padding: 10px;
+.color-contact {
+    color: #8174A0;
+    font-size: 1.8rem;
 }
-.fa-brands {
-    font-size: 30px;
-    padding: 5px;    
-}
-.fa-facebook-f {
-    color: #1f1fc0;
-}
-.fa-instagram {
-    color: #b81e1e;
-}
-.fa-whatsapp{
-    color: #139c13;
-}
-/*ASIDE*/
-
-.aside {
-    grid-area: aside;
-}
-.contenedor-mapa {
-    background-color: #A888B5;
-    padding: 50px;
-    text-align: center;
+.pie-pag section {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
+    flex-grow: 1;
 }
-.imagen-ubicacion {
-    width: 33%;
-    border-radius: 20px;
-    border: 4px solid #808080;
-    margin: 20px;
+.pie-pag ul {
+    margin: 0.4rem;
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    padding: 0.3rem;
 }
+.pie-pag p {
+    margin-top: 0.2rem;
+    padding: 0.2rem;
+}
+/*MQ*/
 
-/*MEDIA QUERIES DESKTOP A MOBILE
-tablet 768px
-mobile 480px
-nota: solo vamos a declarar dentro de la MQ los cambios a realizar, no agregamos ni repetimos el mismo codigo
-*/
-/*
-@media (max-width: 780px) {
-    .navegador-principal ul {
-        flex-direction: column;
-        align-items: center;
-    }
-    .cada-categoria {
-        width: 220px;
-        height: 260px;
-    }
-    .vista-inicial {
-        font-size: 30px;
-        height: 40vh;
-    }
-    .grid-container {
-        grid-template-rows: 0.3fr 2fr 0.3fr;
-    }
-}
-
-/* TABLET */
-/*
-@media (max-width: 768px) {
-    .footer {
-        flex-direction: column;
-        align-items: center;
-    }
-    .navegador-principal {
-        flex-direction: column;
-        align-items: center;
-    }
-    .encabezado a img {
-        margin: 10px auto;
-    }
-    .grid-container {
-        grid-template-rows: 0.3fr 2fr 0.3fr;
-    }
-}
-*/
-/* TELEFONO CELULAR */
-/*
-@media (max-width: 480px) {
-    .cada-categoria {
-        width: 180px;
-        height: 220px;
-    }
-    .titulos-main {
-        font-size: 30px;
-    }
-    .vista-inicial {
-        font-size: 24px;
-        height: 30vh;
-    }
-    .encabezado nav ul li a {
-        padding: 5px 10px;
-        font-size: 14px;
-    }
-    .buttons-nav input, .buttons-nav button {
-        padding: 5px;
-        font-size: 14px;
-    }
-    .footer div h5, .footer div ul li a {
-        font-size: 14px;
-    }
-}
-*/
