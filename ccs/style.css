@@ -66,12 +66,10 @@
 }
 .vista-inicial {
     text-align: center;
-    width: 100%;
-    height: 50vh;
+    height: 100vh;
     color: #000000;
     font-size: 40px;
-    background-image: url(../assets/FONDO-DEPORTIVO.jpg);
-    background-position: center;
+    background-image: url(../assets/FONDO-PRINCIPAL.jpg);
     background-attachment: fixed;
     background-size: cover;
     display: flex;
@@ -196,13 +194,20 @@
     margin: 20px;
 }
 /* MAIN SOBRE NOSTROS */
-
+.about-us-start {
+    background-image: url(../assets/fondo-sobrenosotros.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+.title-about-us {
+    margin-top: 5.2rem;
+    margin-bottom: 0rem;
+    padding: 2.2rem;
+    color: #8174A0;
+    text-shadow: 4px 6px 9px #543554;
+}
 .contenido-sobre-nosotros {
     background-color: #A888B5;
-}
-.sobre-nosotros-main {
-    max-width: 1000px;
-    margin: auto;
 }
 .sobre-nosotros-main img {
     width: 50%;
