@@ -1,0 +1,26 @@
+.navegador-principal {
+    display: flex; 
+    justify-content: flex-end;
+    align-items: center;
+}   
+.nav-options {
+    color: #f8e7f6;
+    text-decoration: underline 0.1rem;
+    text-underline-offset: 0.7rem;
+    :hover {
+        color: #DD88CF;
+    }
+}
+.btn-navegador {
+    color: #DD88CF;
+    border-color: #DD88CF;
+    border-radius: 1.1rem;
+    :hover {
+        background-color: #f8e7f6;
+        color: #000000;
+        border-color: #000000;
+    }
+}
+.btn-2:hover {
+    background-color: #8174A0;
+}

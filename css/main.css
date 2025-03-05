@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Happy Monkey", serif;
+}
+
+.navegador-principal {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-options {
+  color: #f8e7f6;
+  text-decoration: underline 0.1rem;
+  text-underline-offset: 0.7rem;
+}
+.nav-options :hover {
+  color: #DD88CF;
+}
+
+.btn-navegador {
+  color: #DD88CF;
+  border-color: #DD88CF;
+  border-radius: 1.1rem;
+}
+.btn-navegador :hover {
+  background-color: #f8e7f6;
+  color: #000000;
+  border-color: #000000;
+}
+
+.btn-2:hover {
+  background-color: #8174A0;
+}
+
+/*# sourceMappingURL=main.css.map */
