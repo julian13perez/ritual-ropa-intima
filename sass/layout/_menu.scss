@@ -1,26 +1,55 @@
-.navegador-principal {
-    display: flex; 
-    justify-content: flex-end;
+.encabezado {
+    background-color: $primary-color; 
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-}   
-.nav-options {
-    color: #f8e7f6;
-    text-decoration: underline 0.1rem;
-    text-underline-offset: 0.7rem;
-    :hover {
-        color: #DD88CF;
+    color: $secondary-color;
+    box-shadow: 0px 3px 9px $shadow;
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        width: 100%;
+        margin: 0rem 0.5rem;
+        padding: 0.3rem;
+    }
+    &-logo {
+        margin: 1rem;
+        padding: 0.2rem;
+        text-decoration: none;
+        color: $secondary-color;
+        letter-spacing: 1.3px;
+        font-size: 2.2rem;
+        text-shadow: 6px 6px 10px $black;
     }
 }
-.btn-navegador {
-    color: #DD88CF;
-    border-color: #DD88CF;
-    border-radius: 1.1rem;
-    :hover {
-        background-color: #f8e7f6;
-        color: #000000;
-        border-color: #000000;
+.navegador {
+    &-principal {
+        display: flex; 
+        justify-content: flex-end;
+        align-items: center;
+    }
+    &-options {
+        color: $secondary-color;
+        text-decoration: underline 0.1rem;
+        text-underline-offset: 0.7rem;
+        &:hover {
+            color: $button;
+        }
     }
 }
-.btn-2:hover {
-    background-color: #8174A0;
+.btn {
+    &-navegador {
+        color: $button;
+        border-color: $button;
+        border-radius: 1.1rem;
+        &:hover {
+            background-color: $secondary-color;
+            color: $black;
+            border-color: $black;
+        }
+    }
+    &-2:hover {
+        background-color: $primary-color; 
+    }
 }
