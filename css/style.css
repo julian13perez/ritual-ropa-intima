@@ -63,7 +63,7 @@
     height: 100vh;
     color: #000000;
     font-size: 40px;
-    background-image: url(../assets/FONDO-PRINCIPAL.jpg);
+    background-image: url(../assets/principal-fondo.jpg);
     background-attachment: fixed;
     background-size: cover;
     display: flex;
