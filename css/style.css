@@ -58,23 +58,25 @@
     background-color: #8174A0;
 }
 /*MAIN*/
-.contenido {
-    display: flex;
-    flex-direction: column;
-    grid-area: contenido;
-    background-color: #8174A0;
-}
 .vista-inicial {
     text-align: center;
     height: 100vh;
     color: #000000;
     font-size: 40px;
-    background-image: url(../assets/FONDO-PRINCIPAL.jpg);
+    background-image: url(../assets/fondo-principal.jpg);
     background-attachment: fixed;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;  
+}
+.title-presentation {
+    position: absolute;
+    top: 60%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: #f8e7f6;
+    text-shadow: 10px 10px 7px #000000;
 }
 .bienvenida {
     text-align: center;
@@ -85,42 +87,40 @@
     font-size: 40px;
 }
 .titulos-main {
-    font-size: 40px;
-    margin: 20px 0px;
-    color: #808080;
-    text-align: center;
-    text-shadow: 3px 3px 4px #000000;
+    margin-bottom: 0rem;
+    padding: 2.2rem;
+    color: #8174A0;
+    background-color: #f8e7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 4px 6px 9px #543554;
 }
 .categorias {
-    background-color: #8174A0;
+    background-color: #f8e7f6;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 20px;
-    align-items: center;
-    margin-bottom: 40px;
+    padding-bottom: 2rem;
 }
 .cada-categoria {
     position: relative;
-    border: 3px solid #4f0147;
-    border-radius: 25px;
-    width: 340px;
-    height: 390px;
-    margin: 10px;
+    border-radius: 3rem;
+    width: 25rem;
+    height: 25rem;
+    margin: 1rem;
     overflow: hidden;
 }
 .cada-categoria a {
     position: absolute;
-    top: 50%;
+    top: 85%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 18px;
-    font-weight: bold;
-    background: rgba(0, 0, 0, 0.5);
+    background-color: #8174a07c;
+    color: #f8e7f6;
     text-decoration: none;
-    padding: 10px 20px;
-    color: #000000;
-    border-radius: 20px;
+    padding: 0.2rem 1rem;
+    border-radius: 1rem;
     text-align: center;
 }
 .cada-categoria a:hover {
@@ -137,18 +137,17 @@
     transition: transform 0.3s ease-in-out;
 }
 .informacion-adicional {
-    background-color: #5a4f75;
-    padding: 15px;
-    border-left: 2px #808080;
+    background-color: #8174A0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    color: #808080;
-    text-shadow: 1px 2px 3px black;
+    color: #f8e7f6;
+    text-shadow: 6px 5px 8px #000000;
 }
 .informacion-adicional div {
-    margin: 10px;
-    padding: 10px;
+    margin: 0.5rem;
+    padding: 0.5rem;
 }
 /* MAIN CONTACTO */
 .title-contact-1 {
@@ -182,6 +181,15 @@
 .formulario-contact form {
     width: 75%;
 }
+.ubicaciones {
+    position: relative;
+    border-radius: 1rem;
+    width: 50%;
+    height: 100%;
+    margin: 1rem;
+    padding: 2rem;
+    overflow: hidden;
+}
 .contenedor-mapa {
     background-color: #8174A0;
     display: flex;
@@ -189,6 +197,15 @@
     align-items: center;
 }
 .imagen-ubicacion {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    padding-bottom: 1rem;
+    transition: transform 0.3s ease-in-out;
+}
+.imagen-ubicacion:hover {
+    transform: scale(1.05);
     width: 30%;
     border-radius: 2.2rem;
     margin: 2rem;
@@ -201,31 +218,44 @@
     background-size: cover;
 }
 .title-about-us {
-    margin-top: 5.2rem;
-    margin-bottom: 0rem;
-    padding: 2.2rem;
-    color: #8174A0;
-    text-shadow: 4px 6px 9px #543554;
-}
-.contenido-sobre-nosotros {
-    background-color: #A888B5;
-}
-.sobre-nosotros-main img {
-    width: 50%;
-    border-radius: 40px;
-    padding: 20px;
-    margin: 20px;
-}
-.sobre-nosotros-seccion {
-    padding: 50px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f8e7f6;
+    padding: 1.2rem;
+    text-shadow: 10px 10px 7px #000000;
+}    
+.about-us-main {
+    background-color: #8174A0;
+    padding: 2rem;
 }
 .sobre-nosotros-content {
     display: flex;
-    align-items: center;
 }
-.sobre-nosotros-content p {
-    color: #000000;
-    line-height: 1.5;
+.sobre-nosotros-content-2 {
+    display: flex;
+}
+.sections {
+    display: flex;
+    align-items: center;
+    margin: 1.3rem;
+    padding: 1rem;
+}
+.sections p {
+    font-size: 1.5rem;
+    color: #f8e7f6;
+    align-items: center;
+    padding: 3rem;
+}
+.sections img {
+    width: 100%;
+    height: 100%;
+    border-radius: 4rem;
+    object-fit: cover;
+}
+.material-about-us {
+    width: 50%;
 }
 
 /*FOOTER*/
@@ -285,6 +315,7 @@
     transform: scale(1.1);
 }
 /*MQ*/
+
 
 @media (max-width: 768px) {
     .contenedor-mapa {
